@@ -15,6 +15,7 @@ variable "python_script_path_for_create_stage" {
 variable "python_script_path_for_destroy_stage" {
   type = string
   description = "a full path to Python module to execute during resource destroy stage"
+  default = ""
 }
 
 variable "python_interpreter_parameters" {
