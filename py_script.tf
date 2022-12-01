@@ -21,5 +21,5 @@ resource "null_resource" "run_destroy_script" {
     command = self.triggers.destroy_command
   }
 
-  count = length(var.python_script_path_for_destroy_stage) > 0 && fileexists(var.python_script_path_for_destroy_stage) ? 1 : 0
+  count = length(var.python_script_path_for_destroy_stage) > 0 ? 1 : 0
 }
