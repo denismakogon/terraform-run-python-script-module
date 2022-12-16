@@ -19,19 +19,19 @@ variable "python_script_path_for_destroy_stage" {
 }
 
 variable "python_interpreter_parameters" {
-  default = ""
-  type = string
+  default = []
+  type = list(string)
   description = "Python script parameters"
 }
 
 variable "python_script_parameters_for_create_stage" {
-  default = ""
-  type = string
+  default = []
+  type = list(string)
   description = "Python script parameters"
 }
 
 variable "python_script_parameters_for_destroy_stage" {
-  default = ""
-  type = string
+  default = []
+  type = list(string)
   description = "Python script parameters for destroy stage"
 }
